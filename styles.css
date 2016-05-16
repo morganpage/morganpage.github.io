@@ -1,0 +1,54 @@
+
+html { 
+  background: url("Background_gradient.svg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+
+
+html, body{
+	margin: 0;
+	padding: 20px 0 0 0;
+	background-color: transparent;
+	
+}
+
+img {
+    
+}
+
+header h1,h2,p {
+    text-align: center;
+    background-color: transparent;
+}
+
+
+.thumbnail {
+    background-color: transparent;
+    color: transparent;
+    max-width: 60%;
+    height: auto;
+}
+
+.thumbnail {
+    border: 0 none;
+    box-shadow: none;
+    
+}
+
+.social {
+    text-align: center;
+}
+
+.social img {
+    padding: 10px;
+}
+
+.button {
+    text-align: center;
+}
