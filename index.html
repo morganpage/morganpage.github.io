@@ -1,68 +1,53 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+      <script>
+      function playVideo() {
+          var video = document.getElementById('video');
+          video.play();
+          video.addEventListener('click',function(){
+            video.play();
+          },false);
+        };
+      </script>      
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://use.typekit.net/smw0qgg.js"></script>
-        <script>try{Typekit.load({ async: true });}catch(e){}</script>
-        <link href="styles.css" rel="stylesheet">
+        <script src="https://use.fontawesome.com/caf33af235.js"></script>
+      <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
         <title>Dual Good</title>
+        <link href="styles.css" rel="stylesheet">
     </head>
-    <body>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4">
-                    <div class="thumbnail center-block">
-                        <img src="Logo_DG_1.png" >
-                    </div>
-                </div>
-                <div class="col-md-4"></div>
+  <body onload="playVideo()">
+    <div class="section group">
+        <div class="col span_1_of_2 ">
+          <div class="col_one ">
+            <div class="dualgood">
+              dual // good
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>We are a digital creative studio</h2>
-                </div>
+            <h1 class= "tk-proxima-nova">
+              We are a digital creative studio
+            </h1>
+            <p class= "tk-proxima-nova">
+              We specialise in digital design, games and VR experiences
+            </p>
+            <a class="button_link" href="mailto:hello@dualgood.com">contact us</a>
+            <div class = "icons fa-2x">
+              <a href="https://www.facebook.com/dualgoodstudio"><i class="fa fa-facebook-f"></i></a>
+              <a href="https://www.twitter.com/dual_good"><i class="fa fa-twitter"></i> </a>
+              <a href="https://www.instagram.com/dual_good"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.youtube.com/dual_good"><i class="fa fa-youtube-play"></i></a>
             </div>
-            <br>
-            <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4"><p>Dual Good is a creative studio specialising in digital design, games and VR experiences.</p></div>
-                <div class="col-md-4"></div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4"><p>We create products that engage with both concept and execution. We put our hearts in everything we do, from our VR games to everything digital we put out there for the physical world to see.</p></div>
-                <div class="col-md-4"></div>
-            </div>
-            <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4">
-                     <div class="social">
-                         <a href="http://www.facebook.com/dualgoodstudio"><img src="facebook.png" ></a>
-                         <a href="http://twitter.com/dual_good"><img src="twitter.png" ></a>
-                         <a href="https://www.instagram.com/dual_good/"><img src="instagram_glyph-logo_May2016.png" ></a>
-                         <a href="https://www.youtube.com/channel/UC0g1qFICppnO9st75dA_OLQ"><img src="youtube.png" ></a>
-                        
-                    </div>
-                </div>
-                <div class="col-md-4"></div>
-            </div>
-            <br>
-            
-            <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-1"></div>
-                <div class="col-md-2">
-                    <a href="mailto:hello@dualgood.com" class="btn btn-default center-block" role="button">Contact Us</a>
-                </div>
-                <div class="col-md-1"></div>
-                <div class="col-md-4"></div>
-            </div>
+          </div>
         </div>
-    </body>
+        <div class="col span_1_of_2 grey">
+          <div class="col_two">
+           <video id="video" autoplay loop muted>
+              <source src="hx_converted.ogv" type="video/ogg">
+              <source src="hx_converted.webm" type="video/webm">
+              <source src="hx_converted.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+    </div>
+  </body>
 </html>
